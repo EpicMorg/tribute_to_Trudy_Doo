@@ -33,15 +33,13 @@
             this.tab_main = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_step1_next = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tab_license = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_step1_back = new System.Windows.Forms.Button();
             this.btn_step2_next = new System.Windows.Forms.Button();
-            this.tab_conf_browsers = new System.Windows.Forms.TabPage();
+            this.tab_scan_browsers = new System.Windows.Forms.TabPage();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.dg_founded_browsers = new System.Windows.Forms.DataGridView();
             this.chbx_browsers = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -51,19 +49,16 @@
             this.btn_step2_back = new System.Windows.Forms.Button();
             this.btn_step3_next = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tab_config_browsers = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btn_step3_back = new System.Windows.Forms.Button();
             this.btn_step4_next = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tab_addons_installing_for_browsers = new System.Windows.Forms.TabPage();
+            this.tab_soft_selection = new System.Windows.Forms.TabPage();
+            this.tab_soft_installation = new System.Windows.Forms.TabPage();
+            this.tab_errors = new System.Windows.Forms.TabPage();
+            this.tab_finish = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -72,22 +67,26 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabs_main.SuspendLayout();
             this.tab_main.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tab_license.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
-            this.tab_conf_browsers.SuspendLayout();
+            this.tab_scan_browsers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dg_founded_browsers)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.tabPage1.SuspendLayout();
+            this.tab_config_browsers.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,14 +95,13 @@
             this.tabs_main.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tabs_main.Controls.Add(this.tab_main);
             this.tabs_main.Controls.Add(this.tab_license);
-            this.tabs_main.Controls.Add(this.tab_conf_browsers);
-            this.tabs_main.Controls.Add(this.tabPage1);
-            this.tabs_main.Controls.Add(this.tabPage2);
-            this.tabs_main.Controls.Add(this.tabPage3);
-            this.tabs_main.Controls.Add(this.tabPage4);
-            this.tabs_main.Controls.Add(this.tabPage5);
-            this.tabs_main.Controls.Add(this.tabPage6);
-            this.tabs_main.Controls.Add(this.tabPage7);
+            this.tabs_main.Controls.Add(this.tab_scan_browsers);
+            this.tabs_main.Controls.Add(this.tab_config_browsers);
+            this.tabs_main.Controls.Add(this.tab_addons_installing_for_browsers);
+            this.tabs_main.Controls.Add(this.tab_soft_selection);
+            this.tabs_main.Controls.Add(this.tab_soft_installation);
+            this.tabs_main.Controls.Add(this.tab_errors);
+            this.tabs_main.Controls.Add(this.tab_finish);
             this.tabs_main.HotTrack = true;
             this.tabs_main.Location = new System.Drawing.Point(12, 12);
             this.tabs_main.Name = "tabs_main";
@@ -146,16 +144,6 @@
             this.btn_step1_next.UseVisualStyleBackColor = true;
             this.btn_step1_next.Click += new System.EventHandler(this.btn_step1_next_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Installer_GUI.Properties.Resources.WizModernImage;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(164, 314);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // tab_license
             // 
             this.tab_license.BackColor = System.Drawing.Color.White;
@@ -180,23 +168,14 @@
             this.panel3.Size = new System.Drawing.Size(649, 56);
             this.panel3.TabIndex = 5;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Installer_GUI.Properties.Resources.WizModernSmallImage;
-            this.pictureBox2.Location = new System.Drawing.Point(582, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(55, 55);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(6, 61);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(620, 244);
             this.richTextBox1.TabIndex = 4;
-            this.richTextBox1.Text = "Много текста. Бла бла бла.\nИнфа. Что и о чем.\nможно грузить ртфку\n";
+            this.richTextBox1.Text = "Много текста. Бла бла бла.\nИнфа. Что и о чем.\nможно грузить ртфку\n\nПеречислить вс" +
+    "е лицензии устанавливаемых программ.";
             // 
             // panel2
             // 
@@ -230,18 +209,18 @@
             this.btn_step2_next.UseVisualStyleBackColor = true;
             this.btn_step2_next.Click += new System.EventHandler(this.btn_step2_next_Click);
             // 
-            // tab_conf_browsers
+            // tab_scan_browsers
             // 
-            this.tab_conf_browsers.BackColor = System.Drawing.Color.White;
-            this.tab_conf_browsers.Controls.Add(this.progressBar1);
-            this.tab_conf_browsers.Controls.Add(this.dg_founded_browsers);
-            this.tab_conf_browsers.Controls.Add(this.panel5);
-            this.tab_conf_browsers.Controls.Add(this.panel4);
-            this.tab_conf_browsers.Location = new System.Drawing.Point(4, 25);
-            this.tab_conf_browsers.Name = "tab_conf_browsers";
-            this.tab_conf_browsers.Size = new System.Drawing.Size(632, 353);
-            this.tab_conf_browsers.TabIndex = 2;
-            this.tab_conf_browsers.Text = "Скан браузеров";
+            this.tab_scan_browsers.BackColor = System.Drawing.Color.White;
+            this.tab_scan_browsers.Controls.Add(this.progressBar1);
+            this.tab_scan_browsers.Controls.Add(this.dg_founded_browsers);
+            this.tab_scan_browsers.Controls.Add(this.panel5);
+            this.tab_scan_browsers.Controls.Add(this.panel4);
+            this.tab_scan_browsers.Location = new System.Drawing.Point(4, 25);
+            this.tab_scan_browsers.Name = "tab_scan_browsers";
+            this.tab_scan_browsers.Size = new System.Drawing.Size(632, 353);
+            this.tab_scan_browsers.TabIndex = 2;
+            this.tab_scan_browsers.Text = "Скан браузеров";
             // 
             // progressBar1
             // 
@@ -332,26 +311,16 @@
             this.panel4.Size = new System.Drawing.Size(649, 56);
             this.panel4.TabIndex = 8;
             // 
-            // pictureBox3
+            // tab_config_browsers
             // 
-            this.pictureBox3.Image = global::Installer_GUI.Properties.Resources.WizModernSmallImage;
-            this.pictureBox3.Location = new System.Drawing.Point(582, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(55, 55);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.panel6);
-            this.tabPage1.Controls.Add(this.panel7);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(632, 353);
-            this.tabPage1.TabIndex = 3;
-            this.tabPage1.Text = "Конфига браузеров";
+            this.tab_config_browsers.BackColor = System.Drawing.Color.White;
+            this.tab_config_browsers.Controls.Add(this.panel6);
+            this.tab_config_browsers.Controls.Add(this.panel7);
+            this.tab_config_browsers.Location = new System.Drawing.Point(4, 25);
+            this.tab_config_browsers.Name = "tab_config_browsers";
+            this.tab_config_browsers.Size = new System.Drawing.Size(632, 353);
+            this.tab_config_browsers.TabIndex = 3;
+            this.tab_config_browsers.Text = "Конфига браузеров";
             // 
             // panel6
             // 
@@ -395,69 +364,50 @@
             this.panel7.Size = new System.Drawing.Size(649, 56);
             this.panel7.TabIndex = 10;
             // 
-            // pictureBox4
+            // tab_addons_installing_for_browsers
             // 
-            this.pictureBox4.Image = global::Installer_GUI.Properties.Resources.WizModernSmallImage;
-            this.pictureBox4.Location = new System.Drawing.Point(582, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(55, 55);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
+            this.tab_addons_installing_for_browsers.Location = new System.Drawing.Point(4, 25);
+            this.tab_addons_installing_for_browsers.Name = "tab_addons_installing_for_browsers";
+            this.tab_addons_installing_for_browsers.Size = new System.Drawing.Size(632, 353);
+            this.tab_addons_installing_for_browsers.TabIndex = 4;
+            this.tab_addons_installing_for_browsers.Text = "Установка дополнений";
+            this.tab_addons_installing_for_browsers.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tab_soft_selection
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(632, 353);
-            this.tabPage2.TabIndex = 4;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tab_soft_selection.Location = new System.Drawing.Point(4, 25);
+            this.tab_soft_selection.Name = "tab_soft_selection";
+            this.tab_soft_selection.Size = new System.Drawing.Size(632, 353);
+            this.tab_soft_selection.TabIndex = 5;
+            this.tab_soft_selection.Text = "Выбор софта";
+            this.tab_soft_selection.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // tab_soft_installation
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(632, 353);
-            this.tabPage3.TabIndex = 5;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tab_soft_installation.Location = new System.Drawing.Point(4, 25);
+            this.tab_soft_installation.Name = "tab_soft_installation";
+            this.tab_soft_installation.Size = new System.Drawing.Size(632, 353);
+            this.tab_soft_installation.TabIndex = 6;
+            this.tab_soft_installation.Text = "Soft Installation";
+            this.tab_soft_installation.UseVisualStyleBackColor = true;
             // 
-            // tabPage4
+            // tab_errors
             // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(632, 353);
-            this.tabPage4.TabIndex = 6;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tab_errors.Location = new System.Drawing.Point(4, 25);
+            this.tab_errors.Name = "tab_errors";
+            this.tab_errors.Size = new System.Drawing.Size(632, 353);
+            this.tab_errors.TabIndex = 7;
+            this.tab_errors.Text = "tab errors";
+            this.tab_errors.UseVisualStyleBackColor = true;
             // 
-            // tabPage5
+            // tab_finish
             // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(632, 353);
-            this.tabPage5.TabIndex = 7;
-            this.tabPage5.Text = "tabPage5";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 25);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(632, 353);
-            this.tabPage6.TabIndex = 8;
-            this.tabPage6.Text = "tabPage6";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Location = new System.Drawing.Point(4, 25);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(632, 353);
-            this.tabPage7.TabIndex = 9;
-            this.tabPage7.Text = "tabPage7";
-            this.tabPage7.UseVisualStyleBackColor = true;
+            this.tab_finish.Location = new System.Drawing.Point(4, 25);
+            this.tab_finish.Name = "tab_finish";
+            this.tab_finish.Size = new System.Drawing.Size(632, 353);
+            this.tab_finish.TabIndex = 8;
+            this.tab_finish.Text = "tab_finish";
+            this.tab_finish.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -483,9 +433,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 13);
+            this.label3.Size = new System.Drawing.Size(132, 13);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Много текста не осилил";
+            this.label3.Text = "Please accept or decline it";
             // 
             // label4
             // 
@@ -493,18 +443,18 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.Location = new System.Drawing.Point(9, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(256, 18);
+            this.label4.Size = new System.Drawing.Size(151, 18);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Welcome to Installiation Wizzard";
+            this.label4.Text = "License Agreement";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(12, 21);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 13);
+            this.label5.Size = new System.Drawing.Size(70, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Много текста не осилил";
+            this.label5.Text = "Please Wait..";
             // 
             // label6
             // 
@@ -512,18 +462,18 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.Location = new System.Drawing.Point(9, 3);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(256, 18);
+            this.label6.Size = new System.Drawing.Size(180, 18);
             this.label6.TabIndex = 7;
-            this.label6.Text = "Welcome to Installiation Wizzard";
+            this.label6.Text = "Scanning for Browsers";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(12, 21);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(130, 13);
+            this.label7.Size = new System.Drawing.Size(112, 13);
             this.label7.TabIndex = 8;
-            this.label7.Text = "Много текста не осилил";
+            this.label7.Text = "For checked browsers";
             // 
             // label8
             // 
@@ -531,9 +481,49 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.Location = new System.Drawing.Point(9, 3);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(256, 18);
+            this.label8.Size = new System.Drawing.Size(139, 18);
             this.label8.TabIndex = 7;
-            this.label8.Text = "Welcome to Installiation Wizzard";
+            this.label8.Text = "Addons Selection";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Installer_GUI.Properties.Resources.WizModernImage;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(164, 314);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Installer_GUI.Properties.Resources.WizModernSmallImage;
+            this.pictureBox2.Location = new System.Drawing.Point(582, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(55, 55);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Installer_GUI.Properties.Resources.WizModernSmallImage;
+            this.pictureBox3.Location = new System.Drawing.Point(582, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(55, 55);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Installer_GUI.Properties.Resources.WizModernSmallImage;
+            this.pictureBox4.Location = new System.Drawing.Point(582, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(55, 55);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
             // 
             // frm_main
             // 
@@ -553,22 +543,22 @@
             this.tab_main.ResumeLayout(false);
             this.tab_main.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tab_license.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.tab_conf_browsers.ResumeLayout(false);
+            this.tab_scan_browsers.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dg_founded_browsers)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.tabPage1.ResumeLayout(false);
+            this.tab_config_browsers.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
@@ -585,7 +575,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_step1_back;
         private System.Windows.Forms.Button btn_step2_next;
-        private System.Windows.Forms.TabPage tab_conf_browsers;
+        private System.Windows.Forms.TabPage tab_scan_browsers;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -594,18 +584,17 @@
         private System.Windows.Forms.Button btn_step3_next;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tab_config_browsers;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btn_step3_back;
         private System.Windows.Forms.Button btn_step4_next;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage tab_addons_installing_for_browsers;
+        private System.Windows.Forms.TabPage tab_soft_selection;
+        private System.Windows.Forms.TabPage tab_soft_installation;
+        private System.Windows.Forms.TabPage tab_errors;
+        private System.Windows.Forms.TabPage tab_finish;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.DataGridView dg_founded_browsers;
         private System.Windows.Forms.DataGridViewCheckBoxColumn chbx_browsers;
