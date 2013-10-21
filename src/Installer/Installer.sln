@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Installer_GUI", "Installer_GUI\Installer_GUI.csproj", "{77C9018B-1C3D-4445-96FD-3199BFE1F05E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Installer_CLI", "Installer_CLI\Installer_CLI.csproj", "{D8607858-ACEE-4C67-A7EF-D3A37D376203}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Installer_CORE", "Installer_CORE\Installer_CORE.csproj", "{48C82A4F-5770-4CC4-825F-4A1036E803F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77C9018B-1C3D-4445-96FD-3199BFE1F05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C9018B-1C3D-4445-96FD-3199BFE1F05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C9018B-1C3D-4445-96FD-3199BFE1F05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C9018B-1C3D-4445-96FD-3199BFE1F05E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8607858-ACEE-4C67-A7EF-D3A37D376203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8607858-ACEE-4C67-A7EF-D3A37D376203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8607858-ACEE-4C67-A7EF-D3A37D376203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8607858-ACEE-4C67-A7EF-D3A37D376203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C82A4F-5770-4CC4-825F-4A1036E803F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C82A4F-5770-4CC4-825F-4A1036E803F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C82A4F-5770-4CC4-825F-4A1036E803F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C82A4F-5770-4CC4-825F-4A1036E803F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
